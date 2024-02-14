@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-W9W5ZN73');</script>
+  <!-- End Google Tag Manager -->
+  <title>Hooria's Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;1,300;1,600&display=swap"
+    rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9W5ZN73" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="background">
+    <header class="navigation-bar">
+      <a id="aboutme-section" class="aboutme-section"
+        onclick="document.getElementById('about-me-container').scrollIntoView({behavior: 'smooth'});">About Me</a>
+      <a id="myskills-section" class="myskills-section"
+        onclick="document.getElementById('my-skills-container').scrollIntoView({behavior: 'smooth'});">My Skills</a>
+      <a id="portfolio-sextion" class="portfolio-sextion"
+        onclick="document.getElementById('projects-portfolio-container').scrollIntoView({behavior: 'smooth'});">Portfolio</a>
+      <a id="contacts-section" class="contacts-section"
+        onclick="document.getElementById('contact-container').scrollIntoView({behavior: 'smooth'});">Contacts</a>
+    </header>
+    <div class="title-container">
+      <p class="introduction-header">Hi! My name is Hooria Ahmed <br> and I am an aspiring Software Engineer.</p>
+    </div>
+  </div>
+
+  <div id="about-me-container" class="about-me-container">
+    <div class="about-me-header">
+      <p class="about-me-title">About Me</p>
+      <p class="about-me-content">
+        Hello, I'm Hooria Ahmed, a recent graduate with a Bachelors of Science in Computer
+        Science. Currently, I'm gaining valuable experience as an intern at PromoterMotor. My journey in coding began in
+        the classroom and extended into self-directed learning, where I honed my skills and delved into languages like
+        React. Beyond the screen, I have a deep-rooted passion for leveraging my coding expertise to make a positive
+        impact on the world. Whether it's crafting innovative apps, pushing the boundaries of technology, or sharing
+        knowledge through teaching, I am driven by the belief that coding can be a powerful force for positive change.
+        Embarking on a journey where technology meets purpose!
+      </p>
+    </div>
+    <div class="my-image-container">
+    </div>
+  </div>
+
+  <div id="my-skills-container" class="my-skills-container">
+    <div class="my-skills-header">
+      <p class="my-skills-title">
+        My Skills
+      </p>
+      <div class="my-skills-content">
+        <p class="skill-name">HTML</p>
+        <p class="skill-name">CSS</p>
+        <p class="skill-name">JS</p>
+        <p class="skill-name">Python</p>
+      </div>
+      <div class="my-skills-content">
+        <p class="skill-name">C</p>
+        <p class="skill-name">C++</p>
+        <p class="skill-name">Google Tag Manager</p>
+        <p class="skill-name">Google Apps Scripts</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="projects-portfolio-container" class="projects-portfolio-container">
+    <div class="projects-portfolio-header">
+      <p class="projects-portfolio-title">Projects Portfolio</p>
+      <div class="listed-projects">
+        <div class="project">
+          <div class="project-name-container">
+            <p class="project-name">Personal Portfolio</p>
+          </div>
+          <p class="project-description-title">Project Description:</p>
+          <p class="project-description">I implemented a personal portfolio encasing
+            information about me, the skills I have, and the projects I did.</p>
+          <p class="languages-used"><b>Languages Used:</b> <i>HTML, CSS, JavaScript, Google Tag Manager, Google Apps
+              Scripts</i></p>
+          <img class="project-pic" src="project-portfolio.png">
+        </div>
+        <div class="project">
+          <div class="project-name-container">
+            <p class="project-name">Palate Translator:
+              Culinary Conversion Companion</p>
+          </div>
+          <p class="project-description-title">Project Description:</p>
+          <p class="project-description">I designed and implemented a web app which taken in a recipe as an input and
+            also takes the servings the recipe has and how much the user intends to have, and then by using a special
+            formula, the converted recipe for the desired amount of servings is printed to the right..</p>
+          <p class="languages-used"><b>Languages Used:</b> <i>HTML, CSS, JavaScript</i></p>
+          <img class="project-pic" src="project-recipe.png">
+        </div>
+        <div class="project">
+          <div class="project-name-container">
+            <p class="project-name">Rock, Paper, Scissors Game</p>
+          </div>
+          <p class="project-description-title">Project Description:</p>
+          <p class="project-description">I implemented a rock, paper, scissors game to play against the computer.</p>
+          <p class="languages-used"><b>Languages Used:</b> <i>HTML, CSS, JavaScript</i></p>
+          <img class="project-pic" src="project-rps.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact-container" class="contact-container">
+    <div class="contact-header">
+      <p class="contact-title">
+        Requst for Contact Information
+      </p>
+      <div class="contact-content">
+        <form class="form-contact" id="contact-form">
+          <input class="input-name" id="name" type="text" placeholder="First and Last Name">
+          <input class="request-content" id="email" type="text"
+            placeholder="Enter the email to send contact information to">
+          <input class="reasoning" id="reasoning" type="text" placeholder="Reason for Contact">
+          <button class="submit-button" id="submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</body>
